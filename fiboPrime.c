@@ -16,7 +16,7 @@ int main(void)
 	prevTerms = malloc(2 * sizeof(int));    /* array that stores the previous two terms in the Fibonacci sequence */
 	lastPrime = 1;    /* variable that keeps track of the last prime number generated */
 
-    /* Initializing prevTerms[] with the first two terms of the Fibonacci series */
+    	/* Initializing prevTerms[] with the first two terms of the Fibonacci series */
 	prevTerms[0] = 0;
 	prevTerms[1] = 1;
 
@@ -29,7 +29,7 @@ int main(void)
 	{
 		if(i % 2)    /* if n is odd, generate the next number in the Fibonacci series */
 		{
-            /* First two terms of the Fibonacci series (i.e., the first and third terms of this particular sequence) are known already, therefore, print them */
+            		/* First two terms of the Fibonacci series (i.e., the first and third terms of this particular sequence) are known already, therefore, print them */
 			if(i == 1)
 				printf("%d ", prevTerms[0]);
 			else if(i == 3)
@@ -55,7 +55,7 @@ void fibo(int *prevTerms)
 	
 	printf("%d ", current);    /* print the number thus computed */
 
-    /* Reassign values for the next iteration */
+    	/* Reassign values for the next iteration */
 	prevTerms[0] = prevTerms[1];
 	prevTerms[1] = current;
 }
@@ -83,7 +83,7 @@ void prime(int *lastPrime)
 
 		if(primeFlag)    /* the number is a prime number */
 		{
-            printf("%d ", current);    /* print the number */
+            		printf("%d ", current);    /* print the number */
 			*lastPrime = current;    /* set it as the last-generated prime number */
 			break;
 		}
